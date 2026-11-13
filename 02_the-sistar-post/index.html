@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | The SISTAR Post - media - the sistar post</title>
-  <meta name="description" content="*SC (SISTAR Company) - The SISTAR Post : Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting." />
+  <title>*SC | The SISTAR Post — Global Institutional Journalism &amp; Trade Intelligence Wire</title>
+  <meta name="description" content="*SC The SISTAR Post: Institutional monograph detailing the zero-sunk-capex global journalism wire, automated macroeconomic trade analysis, 20-track B2B offer sheets, and IATA/IADA verified newsroom." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | The SISTAR Post",
-    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.",
+    "@type": "TechArticle",
+    "headline": "*SC The SISTAR Post — Global Institutional Journalism & Trade Intelligence Wire",
+    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets, Unmanned Media Broadcasting, and Verifiable Daily NAV Audited Dispatches.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC (SISTAR Company)",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,207 +24,952 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
       document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    /* === INSTITUTIONAL MONOGRAPH BASE STYLES === */
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+      background: transparent;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
       font-weight: 600;
-      color: #475569;
+      color: #334155;
+      margin: 0;
       letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & EDITORIAL HEADINGS === */
+    .sc-chapter {
+      margin-bottom: 56px;
+      padding: 12px 0;
+      background: transparent;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #475569;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.24;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.24rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.84;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.01rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.84;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #1e1b4b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 4vw, 46px);
+      margin: 22px 0 36px 0;
+      border: 1px solid rgba(147, 197, 253, 0.3);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.03rem;
+      color: #e2e8f0;
+      line-height: 1.8;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .sc-kpi-strip { grid-template-columns: 1fr; }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.46rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.86rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL PANELS & GRIDS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 26px 28px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1d4ed8;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.emerald .sc-panel-kicker { color: #0f5132; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === MATHEMATICAL ARCHITECTURE BOXES === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 24px 0;
+      border-left: 4px solid #38bdf8;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
     }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === INSTITUTIONAL MATRICES & TABLES === */
+    .sc-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER CARDS === */
+    .sc-callout {
+      background: #eff6ff;
+      border-left: 5px solid #1d4ed8;
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin: 28px 0;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-dossier-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+    .sc-dossier-id {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.06em;
+    }
+    .sc-dossier-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #1d4ed8;
+    }
+    .sc-dossier-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .sc-dossier-metrics { grid-template-columns: 1fr; }
+    }
+
+    /* === BESPOKE INLINE SVG FRAME === */
+    .sc-svg-frame {
+      width: 100%;
+      margin: 32px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 14px;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+
+    /* === PRINT ENGINE === */
     @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .sc-monograph { max-width: 100% !important; padding: 0 !important; }
+      .sc-panel, .sc-dossier-card, .sc-table-wrap, .sc-svg-frame, .sc-exec-hero {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">media - the sistar post</p>
+  <main class="sc-monograph">
+    <!-- TOP BAR (BREADCRUMB ONLY - NO ACTION BUTTONS) -->
+    <header class="sc-top-bar">
+      <p class="sc-route">media - the sistar post</p>
+    </header>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">INSTITUTIONAL IR, PARTNERSHIP &amp; MEDIA GATEWAY</span></div>
-      <h1 class="sc-h1">*SC - The SISTAR Post</h1>
-      <p class="sc-sub">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.</p>
-      <p class="sc-lead"><strong>The SISTAR Post</strong> serves as the institutional interface connecting global investors, manufacturing partners, regional wholesalers, and media audiences with the <strong>*SC (SISTAR Company)</strong> universe - backed by 100% completed cloud/AI infrastructure and verifiable daily NAV auditing.</p>
-
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">3-Year Financial Trajectory &amp; Unit Economics</h2>
-          <p class="sc-p">Targets Year 1 Revenue of KRW 2.0B (20% OPM) &rarr; Year 2 KRW 7.0B (35% OPM) &rarr; Year 3 KRW 15.0B (35% OPM), supported by an LTV/CAC ratio of 17.5x, 2.8-month payback, and 60-75% blended gross margin.</p>
+    <!-- EXECUTIVE HERO -->
+    <section class="sc-exec-hero">
+      <div class="sc-chapter-num" style="color: #38bdf8; margin-bottom: 8px;">*SC GLOBAL JOURNALISM WIRE // LAYER 6 DIRECTORY &amp; MEDIA</div>
+      <h1 class="sc-doc-h1" style="color: #ffffff; margin-bottom: 12px;">*SC - The SISTAR Post</h1>
+      <p class="sc-sub-h3" style="color: #93c5fd; font-weight: 600; margin-bottom: 18px;">Zero Sunk-Capex Global Journalism, Macroeconomic Intelligence &amp; Verifiable NAV Wire Dispatches</p>
+      <p>The SISTAR Post represents the institutional journalism arm, macroeconomic wire, and sovereign data intelligence agency of the Signal Star Universe (*SC). Engineered as a decentralized, autonomous newsroom operating across 8 international territory bases, the publication delivers rigorous trade analytics, bilateral regulatory telemetry, and real-time auditable corporate disclosures to global institutional investors, sovereign wealth funds, and enterprise partners.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">8 Bureaus</div>
+          <div class="sc-kpi-desc">Global Newsrooms (Korea, US, Indo, Sing, VN, IN, CN, JP)</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">20-Track Standardized B2B Offer Sheets</h2>
-          <p class="sc-p">Ready-to-execute commercial packages covering Container Volume Deals (First 3 Shipments 50% Deposit), SISTAR SOD (Zero-Inventory Dropshipping), Offline Wholesalers, Influencers I-III, and S1-S6 Franchises.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100% NAV</div>
+          <div class="sc-kpi-desc">Verifiable Daily Audited Ledger Transparency</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">SISTAR Studio &amp; The SIGNAL STAR Post</h2>
-          <p class="sc-p">Unmanned media engine producing 10+ shoppable videos, automated newsletters, and global industry briefs daily via RSS/Make/Gemini pipelines - driving zero-CAC organic traffic across all portals.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">20 Tracks</div>
+          <div class="sc-kpi-desc">Standardized Research, Wire &amp; Commercial Offer Sheets</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">IATA &amp; IADA Global Governance</h2>
-          <p class="sc-p">Anchored by the International AI-Trade Association (IATA) and International AI-Data Association (IADA), establishing global standards for AI-driven cross-border trade and data sovereignty.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">&lt; 3 Sec</div>
+          <div class="sc-kpi-desc">Automated Fact-Checking &amp; Provenance Stamping Latency</div>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+    <!-- CHAPTER 1: COMMAND HUB OVERVIEW & EDITORIAL MANDATE -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 01</span>
+        <span class="sc-chapter-tag">L2 Section Command Hub Overview</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Institutional Newsroom: Independent Macro Journalism at Zero Capex</h2>
+      <p class="sc-lead">Conventional financial publications suffer from steep overheads, bureaucratic editorial hierarchies, and commercial conflicts of interest that compromise timely reporting. The SISTAR Post completely rearchitects financial journalism by deploying an autonomous, zero-sunk-capex editorial wire that transforms raw global trade signals into peer-reviewed institutional analyses in real time.</p>
+      <p class="sc-p">Operating at the intersection of international trade law, artificial intelligence governance, and cross-border currency flows, The SISTAR Post is the primary disclosure conduit for *SC's 12-domain semantic matrix. While SISTAR Studio acts as the short-form shoppable media production engine, The SISTAR Post provides the epistemic foundation—publishing deep-dive monographs, white papers, bilateral trade indices, and daily audited Net Asset Value (NAV) certificates that substantiate *SC's corporate solvency and capital stewardship.</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Epistemic Wire</div>
+          <h3 class="sc-sub-h3">Institutional Dispatches</h3>
+          <p class="sc-p">Synthesizes granular supply chain data, tariff shifts, and FX fluctuations into high-impact editorial wire articles syndicated to institutional asset managers worldwide.</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Governance Anchor</div>
+          <h3 class="sc-sub-h3">IATA &amp; IADA Alignment</h3>
+          <p class="sc-p">Serves as the official record of standard setting for the International AI-Trade Association (IATA) and the International AI-Data Association (IADA).</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Integrity Verification</div>
+          <h3 class="sc-sub-h3">Audited NAV Dispatches</h3>
+          <p class="sc-p">Publishes daily cryptographically verifiable balance sheet updates, proving asset backing and removing speculative ambiguity for global capital allocators.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- CHAPTER 2: AUTOMATED COGNITIVE JOURNALISM PIPELINE & SVG 1 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 02</span>
+        <span class="sc-chapter-tag">Cognitive Newsroom Mechanics</span>
+      </div>
+      <h2 class="sc-chapter-h2">Autonomous Ingestion, Verification, and Multi-Bureau Syndication</h2>
+      <p class="sc-lead">The newsroom operates via a deterministic, multi-layered cognitive journalism pipeline. It ingests thousands of global trade feeds, runs multi-agent contradiction analysis, and outputs structured editorial dossiers across six languages without editorial lag.</p>
+      <p class="sc-p">The workflow begins with the <strong>Global Signal Harvester</strong>, which monitors WTO declarations, customs tariff updates, central bank reserve reports, and supply chain shipping manifests. Next, the <strong>Semantic Verification Engine</strong> evaluates each data point against historical archives to eliminate algorithmic hallucinations and ensure strict factual consistency. Finally, the <strong>Editorial Composer</strong> drafts targeted institutional briefs, technical executive summaries, and investigative investigative dossiers, complete with citation graphs and machine-readable data attachments.</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg1-bg-post" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e1b4b" />
+            </linearGradient>
+            <linearGradient id="flow-post" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#818cf8" />
+            </linearGradient>
+            <filter id="post-shadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+            </filter>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg1-bg-post)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">NEWSROOM ENGINE // WIRE ARCHITECTURE</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">The SISTAR Post Autonomous Editorial &amp; Verification Wire</text>
+
+          <!-- Stage 1: Ingestion -->
+          <g transform="translate(36, 100)">
+            <rect width="195" height="180" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" filter="url(#post-shadow)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#0369a1" />
+            <text x="22" y="30" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">01</text>
+            <text x="56" y="31" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SIGNAL HARVESTER</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Macro Ingestion</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Customs &amp; Tariffs APIs</tspan>
+              <tspan x="14" dy="18">• Central Bank FX Feeds</tspan>
+              <tspan x="14" dy="18">• Port Cargo Manifests</tspan>
+              <tspan x="14" dy="18">• Sovereign Regulatory Feeds</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 1 -> 2 -->
+          <path d="M 235 190 L 265 190" stroke="url(#flow-post)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="267,190 260,185 260,195" fill="#818cf8" />
+
+          <!-- Stage 2: Fact-Check & Verification Ring -->
+          <g transform="translate(270, 100)">
+            <rect width="195" height="180" rx="10" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" filter="url(#post-shadow)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#3730a3" />
+            <text x="21" y="30" fill="#c7d2fe" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">02</text>
+            <text x="56" y="31" fill="#c7d2fe" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">VERIFICATION RING</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Multi-Model Cross-Check</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Gemini Cross-Validation</tspan>
+              <tspan x="14" dy="18">• Anti-Hallucination Gate</tspan>
+              <tspan x="14" dy="18">• Citation Graph Anchoring</tspan>
+              <tspan x="14" dy="18">• Data Provenance Hashing</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 2 -> 3 -->
+          <path d="M 469 190 L 499 190" stroke="url(#flow-post)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="501,190 494,185 494,195" fill="#818cf8" />
+
+          <!-- Stage 3: Institutional Composition -->
+          <g transform="translate(504, 100)">
+            <rect width="195" height="180" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" filter="url(#post-shadow)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#581c87" />
+            <text x="21" y="30" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">03</text>
+            <text x="56" y="31" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">EDITORIAL FORGE</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Structured Dossier</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Multilingual Drafting (6 Lang)</tspan>
+              <tspan x="14" dy="18">• Executive Math Embeds</tspan>
+              <tspan x="14" dy="18">• Macro Monograph Layout</tspan>
+              <tspan x="14" dy="18">• Interactive Chart Tagging</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 3 -> 4 -->
+          <path d="M 703 190 L 733 190" stroke="url(#flow-post)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="735,190 728,185 728,195" fill="#818cf8" />
+
+          <!-- Stage 4: Global Bureau Wire -->
+          <g transform="translate(738, 100)">
+            <rect width="186" height="180" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" filter="url(#post-shadow)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#064e3b" />
+            <text x="21" y="30" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">04</text>
+            <text x="56" y="31" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">GLOBAL BUREAU WIRE</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">8 Hub Dispatch</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Institutional Investor Terminal</tspan>
+              <tspan x="14" dy="18">• Daily NAV Audit Wire</tspan>
+              <tspan x="14" dy="18">• Sovereign Wealth Briefs</tspan>
+              <tspan x="14" dy="18">• RSS &amp; JSON-LD Syndication</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 2.1: The SISTAR Post Autonomous Newsroom Engine — From Macro Ingestion to 8-Hub Global Bureau Dispatch.</p>
+    </article>
+
+    <!-- CHAPTER 3: FINANCIAL TRAJECTORY & WIRE UNIT ECONOMICS -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 03</span>
+        <span class="sc-chapter-tag">Unit Economics &amp; Monetization Trajectory</span>
+      </div>
+      <h2 class="sc-chapter-h2">3-Year Financial Model &amp; Enterprise Research Economics</h2>
+      <p class="sc-lead">The business model of The SISTAR Post blends institutional subscription access, programmatic data licensing, and sponsored research dossiers for global trade consortia. Operating with zero physical printing presses or salaried foreign correspondents, operating leverage expands rapidly as enterprise distribution scales.</p>
+      
+      <p class="sc-p">In Year 1, The SISTAR Post contributes directly to *SC Media's <strong>KRW 2.0 Billion</strong> target (capturing KRW 600M in high-margin research and terminal subscriptions at <strong>25% OPM</strong>). By Year 2, as institutional wire connections expand to multinational logistics operators, sovereign wealth consultants, and import/export chambers, revenue reaches <strong>KRW 2.4 Billion</strong> out of the consolidated KRW 7.0 Billion media target, delivering a <strong>38% OPM</strong>. In Year 3, research licensing and daily NAV audit subscriptions stabilize at <strong>KRW 5.25 Billion</strong> (35% OPM) with an LTV/CAC ratio of <strong>19.2x</strong> and negative churn among institutional enterprise subscribers.</p>
+
+      <!-- MATH BOX 1: WIRE SUBSCRIBER LTV & INTELLIGENCE INDEX -->
+      <div class="sc-math-box">
+        <div class="sc-chapter-num" style="color: #38bdf8; margin-bottom: 4px;">EQUATION P-201 // INSTITUTIONAL WIRE MONETIZATION EFFICIENCY</div>
+        <div class="sc-math-code">LTV_{wire} = \frac{ACV_{tier} \times Gross\_Margin\%}{Churn_{annual} + Discount\_Rate} \quad \text{where} \quad CAC_{institutional} \to \frac{C_{api\_compliance}}{N_{syndicated\_clients}} = \text{Payback } \le 2.4 \text{ Months}</div>
+        <p style="margin: 8px 0 0 0; color: #cbd5e1; font-size: 0.95rem; line-height: 1.65;">
+          Where <strong>ACV_{tier}</strong> represents the Annual Contract Value across Tier 1 Sovereign / Institutional data feeds, <strong>Churn_{annual}</strong> maintains a sub-2.5% rate due to embedded daily NAV audit integrations, and marginal acquisition cost is amortized across automated syndicated clients.
+        </p>
+      </div>
+
+      <!-- TABLE 1: 3-YEAR WIRE MONETIZATION MATRIX -->
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Fiscal Horizon</th>
+              <th>Wire &amp; Research Revenue (KRW)</th>
+              <th>Operating Profit (OPM %)</th>
+              <th>Active Enterprise Terminals</th>
+              <th>Daily Dispatches Published</th>
+              <th>Renewal Retention Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Year 1 (Bootstrap &amp; Deploy)</strong></td>
+              <td>KRW 600 Million</td>
+              <td>KRW 150M (25.0%)</td>
+              <td>85 Institutional Accounts</td>
+              <td>12 Dispatches / Day</td>
+              <td>94.2%</td>
+            </tr>
+            <tr>
+              <td><strong>Year 2 (Regional Scaling)</strong></td>
+              <td>KRW 2.40 Billion</td>
+              <td>KRW 912M (38.0%)</td>
+              <td>320 Institutional Accounts</td>
+              <td>30 Dispatches / Day</td>
+              <td>97.5%</td>
+            </tr>
+            <tr>
+              <td><strong>Year 3 (Global Steady State)</strong></td>
+              <td>KRW 5.25 Billion</td>
+              <td>KRW 1.94 Billion (37.0%)</td>
+              <td>750+ Institutional Accounts</td>
+              <td>65+ Dispatches / Day</td>
+              <td>98.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4: 20-TRACK STANDARDIZED B2B WIRE OFFER SHEETS & TABLE 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 04</span>
+        <span class="sc-chapter-tag">Commercial Media Licensing</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 20-Track Institutional Media &amp; Syndication Offer Sheets</h2>
+      <p class="sc-lead">The SISTAR Post monetizes its editorial output through 20 structured B2B offer tracks tailored for trade organizations, hedge funds, sovereign agencies, and logistics operators seeking real-time macroeconomic clarity.</p>
+      <p class="sc-p">These commercial vehicles encompass programmatic API news feeds, customized sector monographs, sponsored sovereign industry dossiers, and certified daily NAV verification streams. All transactions execute with standardized legal documentation, strict non-disclosure clauses, and automated clearing protocols protected by *SC's Triple Control Towers.</p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Track Category</th>
+              <th>Package Designation</th>
+              <th>Scope of Access &amp; Deliverables</th>
+              <th>Licensing Commitment (Annual)</th>
+              <th>Settlement &amp; Compliance Protocol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sovereign &amp; Macro</strong></td>
+              <td>Track P-01: Sovereign Intelligence Feed</td>
+              <td>Direct API stream of bilateral tariff analysis, trade treaty modifications, and regulatory updates across 8 hub jurisdictions</td>
+              <td>KRW 120M / Year (Enterprise Multi-Seat)</td>
+              <td>Quarterly advance wire; full IATA trade data sovereignty compliance</td>
+            </tr>
+            <tr>
+              <td><strong>Financial Terminals</strong></td>
+              <td>Track P-04: Institutional NAV Ledger Terminal</td>
+              <td>Sub-second WebSocket feed of daily audited NAV disclosures, holding balance sheets, and inventory liquidation metrics</td>
+              <td>KRW 75M / Year (Financial Desk License)</td>
+              <td>Direct billing with automated K-SURE credit insurance integration</td>
+            </tr>
+            <tr>
+              <td><strong>Commodity &amp; Freight</strong></td>
+              <td>Track P-08: Cross-Border Logistics Pulse</td>
+              <td>Daily container freight rate telemetry, port congestion indices, and fuel surcharge forecasts for Asia-Pacific trade corridors</td>
+              <td>KRW 45M / Year (Logistics Corporate)</td>
+              <td>Monthly automated billing with 70/30 PG split webhook execution</td>
+            </tr>
+            <tr>
+              <td><strong>Custom Monographs</strong></td>
+              <td>Track P-14: Sponsored Sector Whitepaper</td>
+              <td>Full 8-chapter institutional research monograph examining emerging consumer market categories or industrial supply hubs</td>
+              <td>KRW 35M per bespoke publication</td>
+              <td>50% advance upon research charter; 50% upon global wire dispatch</td>
+            </tr>
+            <tr>
+              <td><strong>Syndication Network</strong></td>
+              <td>Track P-19: Global Newsroom Wire Syndication</td>
+              <td>Full republication rights for financial news aggregators, TV networks, and regional industry trade publications</td>
+              <td>KRW 60M / Year (Full Syndication)</td>
+              <td>Automated bi-weekly royalty clearing through *SC Index Fiduciary Vault</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5: DUAL-AUDIENCE PUBLISHING ARCHITECTURE & SVG 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 05</span>
+        <span class="sc-chapter-tag">Editorial Tiering Dynamics</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Audience Publishing Architecture &amp; Influence Engine</h2>
+      <p class="sc-lead">To maximize institutional credibility while cultivating broad commercial awareness, The SISTAR Post deploys a dual-tier publishing architecture that seamlessly segments high-level geopolitical analysis from open public market reporting.</p>
+      <p class="sc-p">At <strong>Tier 1 (Restricted Institutional Tier)</strong>, accredited capital partners and enterprise subscribers access unredacted trade treaty impact models, container movement forecasts, and confidential daily NAV audits. At <strong>Tier 2 (Open Public Wire)</strong>, articles are optimized for widespread digital syndication, SEO discoverability, and executive thought leadership. This public tier drives hundreds of thousands of organic visits into *SC's commercial ecosystem, seamlessly converting readers into B2B wholesale buyers or SISTAR SOD dropship entrepreneurs.</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg2-bg-post" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#090d16" />
+              <stop offset="100%" stop-color="#1e1b4b" />
+            </linearGradient>
+            <linearGradient id="tier1-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#6366f1" />
+            </linearGradient>
+            <linearGradient id="tier2-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#059669" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg2-bg-post)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">EDITORIAL ARCHITECTURE // DUAL AUDIENCE DYNAMICS</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">The SISTAR Post Tiered Publishing &amp; Conversion System</text>
+
+          <!-- Core Editorial Desk (Left) -->
+          <g transform="translate(36, 110)">
+            <rect width="210" height="175" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="16" y="32" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CENTRAL DESK</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Signal Star Newsroom</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Macroeconomic Telemetry</tspan>
+              <tspan x="16" dy="18">• IATA / IADA Governance</tspan>
+              <tspan x="16" dy="18">• Verifiable NAV Ledgers</tspan>
+              <tspan x="16" dy="18">• Investigative Trade Audits</tspan>
+            </text>
+          </g>
+
+          <!-- Dotted Separator / Router -->
+          <path d="M 255 197 L 310 155" stroke="url(#tier1-grad)" stroke-width="2.5" />
+          <polygon points="312,154 303,153 307,161" fill="#38bdf8" />
+
+          <path d="M 255 197 L 310 240" stroke="url(#tier2-grad)" stroke-width="2.5" />
+          <polygon points="312,241 307,233 303,241" fill="#10b981" />
+
+          <!-- TIER 1: RESTRICTED INSTITUTIONAL DISPATCH -->
+          <g transform="translate(320, 105)">
+            <rect width="360" height="90" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <rect x="14" y="14" width="70" height="18" rx="4" fill="#0369a1" />
+            <text x="21" y="27" fill="#bae6fd" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">TIER 1 WIRE</text>
+            <text x="94" y="28" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">RESTRICTED INSTITUTIONAL TERMINAL</text>
+            <text x="14" y="54" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">Sovereign Wealth &amp; Capital Partners</text>
+            <text x="14" y="74" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Sub-second NAV updates &bull; Tariff forecast models &bull; M&amp;A transaction data</text>
+          </g>
+
+          <!-- TIER 2: OPEN PUBLIC SYNDICATION WIRE -->
+          <g transform="translate(320, 205)">
+            <rect width="360" height="90" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <rect x="14" y="14" width="60" height="18" rx="4" fill="#064e3b" />
+            <text x="21" y="27" fill="#a7f3d0" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">TIER 2 WIRE</text>
+            <text x="84" y="28" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">OPEN MARKET INTELLIGENCE DISPATCH</text>
+            <text x="14" y="54" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">Global Commerce &amp; Wholesale Audience</text>
+            <text x="14" y="74" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">SEO macro monographs &bull; Trade newsletters &bull; Zero-CAC wholesale lead funnel</text>
+          </g>
+
+          <!-- Right Outcomes (Institutional vs Commerce Conversion) -->
+          <path d="M 690 150 L 730 150" stroke="#38bdf8" stroke-width="2" />
+          <path d="M 690 250 L 730 250" stroke="#10b981" stroke-width="2" />
+
+          <!-- Outcome Box 1 -->
+          <g transform="translate(735, 110)">
+            <rect width="185" height="80" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1.5" />
+            <text x="12" y="26" fill="#a5b4fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">INSTITUTIONAL OUTCOME</text>
+            <text x="12" y="48" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Direct Capital Inflow</text>
+            <text x="12" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">LPs, VCs &amp; Fiduciary Mandates</text>
+          </g>
+
+          <!-- Outcome Box 2 -->
+          <g transform="translate(735, 210)">
+            <rect width="185" height="80" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+            <text x="12" y="26" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">COMMERCE OUTCOME</text>
+            <text x="12" y="48" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Zero-CAC Wholesale Deals</text>
+            <text x="12" y="68" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10">Container Buyers &amp; Dropshippers</text>
+          </g>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 2.2: Dual-Audience Publishing Architecture — Segmenting restricted capital partner dispatches from public organic conversion wires.</p>
+    </article>
+
+    <!-- CHAPTER 6: GLOBAL GOVERNANCE (IATA / IADA) & REGULATORY TELEMETRY -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 06</span>
+        <span class="sc-chapter-tag">Global Standards &amp; Data Sovereignty</span>
+      </div>
+      <h2 class="sc-chapter-h2">IATA &amp; IADA Standards Reporting &amp; International Bureau Matrix</h2>
+      <p class="sc-lead">As global commerce accelerates into algorithmically mediated exchanges, data sovereignty and regulatory transparency become paramount. The SISTAR Post serves as the formal reporting record for both the International AI-Trade Association (IATA) and the International AI-Data Association (IADA).</p>
+      <p class="sc-p">Through our permanent editorial presence across eight global hubs—Korea (SCK), Indonesia (SCI), Singapore (SCS), USA (SCU), Vietnam (SCV), India (SCIND), China (SCC), and Japan (SCJ)—the publication tracks local trade legislation in real time. When bilateral trade pacts are renegotiated or customs tariffs adjusted, our automated editorial engine publishes instant impact assessments, enabling *SC operating companies and commercial partners to pivot supply chains proactively.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">IATA Protocol Telemetry</div>
+          <h3 class="sc-sub-h3">Cross-Border AI Trade Transparency</h3>
+          <p class="sc-p">Publishes standardized harmonization bulletins that track cross-border customs classifications, autonomous AI-assisted invoicing rules, and multimodal logistics corridors.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">IADA Sovereignty Ledger</div>
+          <h3 class="sc-sub-h3">Data Localization &amp; Integrity Compliance</h3>
+          <p class="sc-p">Monitors sovereign data localization requirements across ASEAN, East Asia, and North American jurisdictions, ensuring that all published research adheres to cross-border data transfer pacts.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 7: PROOF-OF-INTEGRITY & VERIFIABLE NAV LEDGER & SVG 3 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 07</span>
+        <span class="sc-chapter-tag">Proof of Integrity &amp; Balance Sheet Transparency</span>
+      </div>
+      <h2 class="sc-chapter-h2">Cryptographic Proof-of-Integrity &amp; Verifiable Daily NAV Publishing</h2>
+      <p class="sc-lead">Unlike traditional financial journalism that relies on delayed quarterly filings or unaudited press releases, The SISTAR Post embeds an immutable cryptographic verification engine directly into its publishing pipeline.</p>
+      <p class="sc-p">Every morning at 00:00 UTC, the publication generates an auditable <strong>Daily NAV Dispatch</strong>. This document summarizes consolidated treasury balances, inventory liquidation velocities, K-SURE insured export volumes, and escrowed 70/30 split settlements. The data is hashed using SHA-256 and anchored to public timestamping registries, providing global investors with mathematical certainty regarding *SC's solvency, liquidity reserves, and corporate balance sheet strength.</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg3-bg-post" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+            <linearGradient id="proof-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#34d399" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg3-bg-post)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">CRYPTOGRAPHIC PROOF // VERIFIABLE INTEGRITY</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Verifiable Daily NAV Auditing &amp; Timestamping Ledger</text>
+
+          <!-- Data Input: ERP & Ledgers -->
+          <g transform="translate(36, 110)">
+            <rect width="190" height="170" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="16" y="32" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">LEDGER INFLOW</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Consolidated ERP</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Bank Treasury Balance</tspan>
+              <tspan x="16" dy="18">• Inventory Liquidation Val</tspan>
+              <tspan x="16" dy="18">• K-SURE Insured Escrows</tspan>
+              <tspan x="16" dy="18">• 70/30 Split Clearing Logs</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 1 -> 2 -->
+          <path d="M 230 195 L 270 195" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="272,195 265,190 265,200" fill="#38bdf8" />
+
+          <!-- Triple Control Towers Verification -->
+          <g transform="translate(275, 110)">
+            <rect width="210" height="170" rx="10" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+            <text x="16" y="32" fill="#a5b4fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">TRIPLE CONTROL TOWERS</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Auditing Verification</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Multi-Signature Validation</tspan>
+              <tspan x="16" dy="18">• Forensic Ratio Cross-Check</tspan>
+              <tspan x="16" dy="18">• Discrepancy Zero Tolerance</tspan>
+              <tspan x="16" dy="18">• Fiduciary Sign-Off Stamp</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 2 -> 3 -->
+          <path d="M 490 195 L 530 195" stroke="#818cf8" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="532,195 525,190 525,200" fill="#818cf8" />
+
+          <!-- Cryptographic Hash & Timestamp -->
+          <g transform="translate(535, 110)">
+            <rect width="200" height="170" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+            <text x="16" y="32" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">HASHING ENGINE</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">SHA-256 Provenance</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Immutable Digest Hashing</tspan>
+              <tspan x="16" dy="18">• RFC 3161 Timestamping</tspan>
+              <tspan x="16" dy="18">• Anti-Tamper Sealing</tspan>
+              <tspan x="16" dy="18">• Dual-Track Ring Fence</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 3 -> 4 -->
+          <path d="M 740 195 L 775 195" stroke="#34d399" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="777,195 770,190 770,200" fill="#34d399" />
+
+          <!-- Final Wire Dispatch -->
+          <g transform="translate(780, 110)">
+            <rect width="145" height="170" rx="10" fill="#064e3b" stroke="#4ade80" stroke-width="1.5" />
+            <text x="14" y="32" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">DISPATCH WIRE</text>
+            <text x="14" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Global Release</text>
+            <text x="14" y="86" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Daily NAV Certificate</tspan>
+              <tspan x="14" dy="18">• Institutional Wire</tspan>
+              <tspan x="14" dy="18">• Terminal Push</tspan>
+              <tspan x="14" dy="18">• Public Ledger View</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 2.3: Cryptographic Proof-of-Integrity — Transforming daily accounting balances into immutable, audited wire dispatches.</p>
+    </article>
+
+    <!-- CHAPTER 8: INSTITUTIONAL DOSSIER & STRATEGIC SYNERGY -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 08</span>
+        <span class="sc-chapter-tag">Institutional Dossier</span>
+      </div>
+      <h2 class="sc-chapter-h2">Corporate Governance Ledger &amp; Bureau Summary</h2>
+      
+      <div class="sc-dossier-card">
+        <div class="sc-dossier-top">
+          <div>
+            <span class="sc-dossier-id">NODE ID: SC-MEDIA-POST-02</span>
+            <span class="sc-dossier-domain" style="margin-left: 12px;">DOMAIN 12: MEDIA // INSTITUTIONAL WIRE</span>
+          </div>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; font-weight: 600; color: #64748b;">STATUS: OPERATIONAL &bull; VERIFIED</span>
+        </div>
+        <h3 class="sc-sub-h3" style="font-size: 1.35rem; margin-bottom: 12px;">The SISTAR Post Global Newsroom Specifications</h3>
+        <p class="sc-p">The SISTAR Post establishes a benchmark for autonomous financial journalism. By eliminating legacy newspaper overheads and anchoring every publication in cryptographic provenance and verifiable daily NAV ledgers, the wire delivers unmatched truth velocity and commercial conversion for the Signal Star Universe.</p>
+        
+        <div class="sc-dossier-metrics">
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Syndication Reach</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-top: 4px;">8 International Hubs</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Integrity Verification</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f5132; margin-top: 4px;">SHA-256 Provenance</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Reporting Model</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #1d4ed8; margin-top: 4px;">Daily NAV Audited</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC — SISTAR COMPANY | One Spark, Infinite Galaxifying</div>
+        <p class="sc-p" style="margin: 0; color: #1e293b;">Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation. All commercial inquiries and institutional investment memorandums are managed via the central corporate portal.<br/>Corporate Portal: <a href="https://sistarcompany.com" target="_blank" style="color: #0f5132; font-weight: 600;">https://sistarcompany.com</a> &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</p>
+      </div>
+    </article>
   </main>
 </body>
 </html>

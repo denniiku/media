@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | SISTAR Studio - media - sistar studio</title>
-  <meta name="description" content="*SC (SISTAR Company) - SISTAR Studio : Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting." />
+  <title>*SC | SISTAR Studio — Autonomous Content Production Forge &amp; Shoppable Media Engine</title>
+  <meta name="description" content="*SC SISTAR Studio: Institutional monograph detailing the zero-sunk-capex media architecture, automated AI content generation pipelines, 20-track B2B offer sheets, and unmanned shoppable video networks." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | SISTAR Studio",
-    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.",
+    "@type": "TechArticle",
+    "headline": "*SC SISTAR Studio — Autonomous Content Production Forge & Shoppable Media Engine",
+    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets, Unmanned Media Broadcasting, and 3-Year Scaled Unit Economics.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC (SISTAR Company)",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,207 +24,955 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
       var base = "/common_assets/";
       if (location.protocol === "file:") {
         var i = p.toLowerCase().indexOf("/sc_web/");
-        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "./common_assets/";
+        base = i !== -1 ? "file://" + p.substring(0, i + 8) + "common_assets/" : "../common_assets/";
       }
       document.write("<link rel=\"stylesheet\" href=\"" + base + "common_new.css?v=2.2\">");
       document.write("<script src=\"" + base + "nav_new.js?v=2.2\" defer><\/script><script src=\"" + base + "sc_translator.js\" defer><\/script>");
     })();
   </script>
   <style>
-    .sc-auto-page {
+    /* === INSTITUTIONAL MONOGRAPH BASE STYLES === */
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+      background: transparent;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
       font-weight: 600;
-      color: #475569;
+      color: #334155;
+      margin: 0;
       letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & EDITORIAL HEADINGS === */
+    .sc-chapter {
+      margin-bottom: 56px;
+      padding: 12px 0;
+      background: transparent;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #475569;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.24;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.24rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.84;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.01rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.84;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 4vw, 46px);
+      margin: 22px 0 36px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.03rem;
+      color: #e2e8f0;
+      line-height: 1.8;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .sc-kpi-strip { grid-template-columns: 1fr; }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.46rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.86rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL PANELS & GRIDS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 26px 28px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === MATHEMATICAL ARCHITECTURE BOXES === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 24px 0;
+      border-left: 4px solid #10b981;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
     }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === INSTITUTIONAL MATRICES & TABLES === */
+    .sc-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER CARDS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 8px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin: 28px 0;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-dossier-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+    .sc-dossier-id {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #0f172a;
+      color: #4ade80;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.06em;
+    }
+    .sc-dossier-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #0f5132;
+    }
+    .sc-dossier-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .sc-dossier-metrics { grid-template-columns: 1fr; }
+    }
+
+    /* === BESPOKE INLINE SVG FRAME === */
+    .sc-svg-frame {
+      width: 100%;
+      margin: 32px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 14px;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+
+    /* === PRINT ENGINE === */
     @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .sc-monograph { max-width: 100% !important; padding: 0 !important; }
+      .sc-panel, .sc-dossier-card, .sc-table-wrap, .sc-svg-frame, .sc-exec-hero {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">media - sistar studio</p>
+  <main class="sc-monograph">
+    <!-- TOP BAR (BREADCRUMB ONLY - NO ACTION BUTTONS) -->
+    <header class="sc-top-bar">
+      <p class="sc-route">media - sistar studio</p>
+    </header>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">INSTITUTIONAL IR, PARTNERSHIP &amp; MEDIA GATEWAY</span></div>
-      <h1 class="sc-h1">*SC - SISTAR Studio</h1>
-      <p class="sc-sub">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.</p>
-      <p class="sc-lead"><strong>SISTAR Studio</strong> serves as the institutional interface connecting global investors, manufacturing partners, regional wholesalers, and media audiences with the <strong>*SC (SISTAR Company)</strong> universe - backed by 100% completed cloud/AI infrastructure and verifiable daily NAV auditing.</p>
-
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">3-Year Financial Trajectory &amp; Unit Economics</h2>
-          <p class="sc-p">Targets Year 1 Revenue of KRW 2.0B (20% OPM) &rarr; Year 2 KRW 7.0B (35% OPM) &rarr; Year 3 KRW 15.0B (35% OPM), supported by an LTV/CAC ratio of 17.5x, 2.8-month payback, and 60-75% blended gross margin.</p>
+    <!-- EXECUTIVE HERO -->
+    <section class="sc-exec-hero">
+      <div class="sc-chapter-num" style="color: #4ade80; margin-bottom: 8px;">*SC CONTENT PRODUCTION FORGE // LAYER 6 DIRECTORY &amp; MEDIA</div>
+      <h1 class="sc-doc-h1" style="color: #ffffff; margin-bottom: 12px;">*SC - SISTAR Studio</h1>
+      <p class="sc-sub-h3" style="color: #86efac; font-weight: 600; margin-bottom: 18px;">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting</p>
+      <p>SISTAR Studio operates as the institutional production forge and broadcast matrix connecting international investors, tier-1 contract manufacturers, regional FMCG wholesalers, and consumer audiences with the Signal Star Universe (*SC). Grounded in 100% cloud-native cognitive pipelines and real-time auditable Net Asset Value (NAV) ledgers, the studio transforms digital commerce into an automated, zero-CAC conversion engine.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">17.5x</div>
+          <div class="sc-kpi-desc">LTV / CAC Blended Ratio Across Omnichannel Funnels</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">20-Track Standardized B2B Offer Sheets</h2>
-          <p class="sc-p">Ready-to-execute commercial packages covering Container Volume Deals (First 3 Shipments 50% Deposit), SISTAR SOD (Zero-Inventory Dropshipping), Offline Wholesalers, Influencers I-III, and S1-S6 Franchises.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">2.8 Mo</div>
+          <div class="sc-kpi-desc">Customer Acquisition Payback Period Velocity</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">SISTAR Studio &amp; The SIGNAL STAR Post</h2>
-          <p class="sc-p">Unmanned media engine producing 10+ shoppable videos, automated newsletters, and global industry briefs daily via RSS/Make/Gemini pipelines - driving zero-CAC organic traffic across all portals.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">60-75%</div>
+          <div class="sc-kpi-desc">Blended Gross Margin Across All Commerce Tracks</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">IATA &amp; IADA Global Governance</h2>
-          <p class="sc-p">Anchored by the International AI-Trade Association (IATA) and International AI-Data Association (IADA), establishing global standards for AI-driven cross-border trade and data sovereignty.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">10+ Daily</div>
+          <div class="sc-kpi-desc">Autonomous Shoppable Multi-Format Video Assets</div>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+    <!-- CHAPTER 1: COMMAND HUB OVERVIEW & STRATEGIC MANDATE -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 01</span>
+        <span class="sc-chapter-tag">L2 Section Command Hub Overview</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Strategic Mandate: Zero Sunk-Capex Content Architecture</h2>
+      <p class="sc-lead">In conventional retail and consumer commerce, production studios demand immense sunk capital expenditure—studio real estate, high-overhead cinematographers, bespoke audio engineers, and sluggish post-production teams that bottleneck market reactivity. SISTAR Studio completely eliminates sunk capex by deploying an autonomous content generation forge orchestrated through Gemini multimodal models, Make workflow automation, and distributed algorithmic syndication.</p>
+      <p class="sc-p">Serving as the command hub of the *SC Media domain, SISTAR Studio bridges the gap between physical supply chain availability and immediate global demand. As soon as a product batch is scheduled in our ERP or a commercial container deal is executed, the studio's automated pipelines ingest product attributes, compliance certificates, high-resolution 3D renders, and localized cultural hooks. Within minutes, multilingual video collaterals, shoppable micro-trailers, and interactive product brochures are synthesized and broadcast across 8 international territory bases.</p>
+      
+      <div class="sc-grid-3">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Core Protocol</div>
+          <h3 class="sc-sub-h3">Zero-Capex Synthetics</h3>
+          <p class="sc-p">Eliminates soundstages and filming crews through automated algorithmic generation of shoppable video assets, avatar presenters, and neural voiceover tracks at under 1% of conventional studio costs.</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Throughput Rate</div>
+          <h3 class="sc-sub-h3">10+ Shoppable Units / Day</h3>
+          <p class="sc-p">Continuous automated ingestion yields ten or more tailored multi-format video assets daily, complete with localized subtitle tracks and embedded e-commerce checkout metadata.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Conversion Bridge</div>
+          <h3 class="sc-sub-h3">Zero-CAC Organic Engine</h3>
+          <p class="sc-p">Systematic syndication across YouTube Shorts, TikTok, Instagram Reels, and regional streaming platforms captures high-intent organic traffic without paid advertising dependency.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- CHAPTER 2: AUTOMATED CONTENT GENERATION PIPELINE & SVG 1 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 02</span>
+        <span class="sc-chapter-tag">AI Pipeline Engineering</span>
+      </div>
+      <h2 class="sc-chapter-h2">Autonomous Ingestion, Synthesis, and Syndication Mechanics</h2>
+      <p class="sc-lead">The operational engine of SISTAR Studio functions as a deterministic pipeline. It converts raw product data, market trend telemetry, and inventory availability into broadcast-ready commercial assets without human intervention.</p>
+      <p class="sc-p">The workflow initiates at the <strong>Signal Ingestion Gateway</strong>, which continuously parses RSS feeds, SKU specifications from *SC Commerce matrices, and market sentiment vectors. The raw text and visual metadata are transmitted into the <strong>Multimodal Cognitive Reasoning Layer</strong> powered by Google Gemini. Here, conversion-optimized copy, cultural translation sets, and script storyboards are formulated. These structured scripts are then dispatched to automated render workers for neural voiceover synthesis, motion graphic assembly, and product tag injection before programmatic distribution.</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+            <linearGradient id="svg1-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#38bdf8" />
+            </linearGradient>
+            <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1e293b" />
+              <stop offset="100%" stop-color="#090d16" />
+            </linearGradient>
+            <filter id="shadow-drop" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+            </filter>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg1-bg)" />
+          
+          <!-- Outer border -->
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <!-- Title & Badges -->
+          <text x="36" y="44" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">PIPELINE ARCHITECTURE // AUTOMATED FORGE</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">SISTAR Studio Autonomous Content Generation Engine</text>
+
+          <!-- Flow Stage 1 -->
+          <g transform="translate(36, 100)">
+            <rect width="195" height="180" rx="10" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" filter="url(#shadow-drop)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#064e3b" />
+            <text x="22" y="30" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">01</text>
+            <text x="56" y="31" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SIGNAL INGESTION</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Data &amp; Trend Feeds</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• SKU &amp; Inventory Telemetry</tspan>
+              <tspan x="14" dy="18">• Market Trend RSS Ingestion</tspan>
+              <tspan x="14" dy="18">• 8 Regional Price Indices</tspan>
+              <tspan x="14" dy="18">• 3D CAD / Packshot Assets</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 1 -> 2 -->
+          <path d="M 235 190 L 265 190" stroke="url(#svg1-glow)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="267,190 260,185 260,195" fill="#38bdf8" />
+
+          <!-- Flow Stage 2 -->
+          <g transform="translate(270, 100)">
+            <rect width="195" height="180" rx="10" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" filter="url(#shadow-drop)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#0369a1" />
+            <text x="21" y="30" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">02</text>
+            <text x="56" y="31" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">COGNITIVE SCRIPTING</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Gemini Reasoning</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• High-Conversion Copywriting</tspan>
+              <tspan x="14" dy="18">• Multilingual Cultural Adapt</tspan>
+              <tspan x="14" dy="18">• Dynamic Scene Storyboards</tspan>
+              <tspan x="14" dy="18">• Shoppable CTA Timestamping</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 2 -> 3 -->
+          <path d="M 469 190 L 499 190" stroke="url(#svg1-glow)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="501,190 494,185 494,195" fill="#38bdf8" />
+
+          <!-- Flow Stage 3 -->
+          <g transform="translate(504, 100)">
+            <rect width="195" height="180" rx="10" fill="url(#card-grad)" stroke="#a855f7" stroke-width="1.5" filter="url(#shadow-drop)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#581c87" />
+            <text x="21" y="30" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">03</text>
+            <text x="56" y="31" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">MEDIA SYNTHESIZER</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Neural Video Render</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• Neural Voiceover Generation</tspan>
+              <tspan x="14" dy="18">• Kinetic Typography Infill</tspan>
+              <tspan x="14" dy="18">• 9:16 Vertical Video Stitching</tspan>
+              <tspan x="14" dy="18">• Auto Product Tag Stamping</tspan>
+            </text>
+          </g>
+
+          <!-- Connector 3 -> 4 -->
+          <path d="M 703 190 L 733 190" stroke="url(#svg1-glow)" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="735,190 728,185 728,195" fill="#38bdf8" />
+
+          <!-- Flow Stage 4 -->
+          <g transform="translate(738, 100)">
+            <rect width="186" height="180" rx="10" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" filter="url(#shadow-drop)" />
+            <rect x="14" y="16" width="32" height="20" rx="4" fill="#064e3b" />
+            <text x="21" y="30" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">04</text>
+            <text x="56" y="31" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">DISTRIBUTION HUB</text>
+            <text x="14" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Omnichannel Blast</text>
+            <text x="14" y="94" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="14" dy="0">• TikTok &amp; IG Reels APIs</tspan>
+              <tspan x="14" dy="18">• YouTube Shorts Auto-Upload</tspan>
+              <tspan x="14" dy="18">• Regional Affiliate Portals</tspan>
+              <tspan x="14" dy="18">• Direct Webhook Conversion</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 1.1: SISTAR Studio's End-to-End Autonomous Pipeline — From SKU Ingestion to Multichannel Conversion Blast.</p>
+    </article>
+
+    <!-- CHAPTER 3: FINANCIAL TRAJECTORY & UNIT ECONOMICS -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 03</span>
+        <span class="sc-chapter-tag">Unit Economics &amp; Auditable Scalability</span>
+      </div>
+      <h2 class="sc-chapter-h2">3-Year Financial Trajectory &amp; Sustainable Operating Margins</h2>
+      <p class="sc-lead">SISTAR Studio is designed not as a cost center, but as a high-margin corporate profit engine that powers the monetization velocity of *SC's 12-domain ecosystem. Because production expenses scale sub-linearly relative to output volume, operating margins expand aggressively over time.</p>
+      
+      <p class="sc-p">In Year 1, the studio targets <strong>KRW 2.0 Billion</strong> in recognized commerce revenue with a <strong>20% Operating Profit Margin (OPM)</strong>. By Year 2, with full API integrations across Korea, Indonesia, Vietnam, and the US hubs, revenue scales to <strong>KRW 7.0 Billion</strong> while OPM expands to <strong>35%</strong> due to automated rendering economies of scale. Year 3 establishes a steady-state run-rate of <strong>KRW 15.0 Billion</strong> at <strong>35% OPM</strong>, supported by an exceptional blended Customer Lifetime Value to Customer Acquisition Cost (LTV/CAC) ratio of <strong>17.5x</strong> and a rapid payback cycle of <strong>2.8 months</strong>.</p>
+
+      <!-- MATH BOX 1: UNIT ECONOMICS & CONVERSION VALUE FORMULA -->
+      <div class="sc-math-box">
+        <div class="sc-chapter-num" style="color: #38bdf8; margin-bottom: 4px;">EQUATION M-101 // BLENDED MEDIA ROI &amp; CONVERSION VELOCITY</div>
+        <div class="sc-math-code">ROI_{media} = \frac{\sum_{i=1}^{n} (GMV_i \times GM_i) - C_{compute}}{C_{compute} + C_{licensing}} \quad \text{where} \quad \frac{LTV}{CAC} = \frac{AOV \times Purchase\_Freq \times Retention\_Yrs \times GM\%}{CAC_{organic\_amortized}} = 17.5x</div>
+        <p style="margin: 8px 0 0 0; color: #cbd5e1; font-size: 0.95rem; line-height: 1.65;">
+          Where <strong>GMV</strong> represents Gross Merchandise Value driven by shoppable videos, <strong>GM</strong> denotes blended gross margin (60-75%), <strong>C_{compute}</strong> reflects GPU inference costs per thousand rendered videos (under KRW 1,800/video), and <strong>CAC_{organic_amortized}</strong> trends toward nominal server overhead.
+        </p>
+      </div>
+
+      <!-- TABLE 1: 3-YEAR FINANCIAL PROJECTIONS -->
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Fiscal Horizon</th>
+              <th>Target Revenue (KRW)</th>
+              <th>Operating Profit (OPM %)</th>
+              <th>Blended Gross Margin</th>
+              <th>Daily Video Asset Volume</th>
+              <th>LTV / CAC Payback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Year 1 (Bootstrap &amp; Deploy)</strong></td>
+              <td>KRW 2.0 Billion</td>
+              <td>KRW 400M (20.0%)</td>
+              <td>62.5%</td>
+              <td>10 Assets / Day</td>
+              <td>12.4x / 3.4 Months</td>
+            </tr>
+            <tr>
+              <td><strong>Year 2 (Regional Scaling)</strong></td>
+              <td>KRW 7.0 Billion</td>
+              <td>KRW 2.45 Billion (35.0%)</td>
+              <td>68.0%</td>
+              <td>25 Assets / Day</td>
+              <td>15.8x / 2.9 Months</td>
+            </tr>
+            <tr>
+              <td><strong>Year 3 (Global Steady State)</strong></td>
+              <td>KRW 15.0 Billion</td>
+              <td>KRW 5.25 Billion (35.0%)</td>
+              <td>74.2%</td>
+              <td>50+ Assets / Day</td>
+              <td>17.5x / 2.8 Months</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4: 20-TRACK STANDARDIZED B2B OFFER SHEETS & TABLE 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 04</span>
+        <span class="sc-chapter-tag">Commercial Monetization Architecture</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 20-Track Standardized B2B Commercial Offer Sheets</h2>
+      <p class="sc-lead">To convert media impressions directly into auditable corporate revenue, SISTAR Studio executes through a rigorous matrix of 20 standardized B2B commercial offer tracks. These pre-packaged deal structures remove negotiation friction and establish immediate contractual certainty for global partners.</p>
+      <p class="sc-p">Each offer track is calibrated for specific buyer profiles—spanning full ocean freight Container Volume Deals, zero-inventory dropshipping networks (SISTAR SOD), regional offline wholesalers, tiered influencer affiliations (Tiers I through III), and turnkey franchise operational licenses (S1 through S6). Every track includes clear payment milestone structures, automated split-settlement webhooks, and K-SURE export risk underwriting.</p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Track Category</th>
+              <th>Commercial Package</th>
+              <th>Minimum Order / Capital Commitment</th>
+              <th>Payment &amp; Escrow Structure</th>
+              <th>Studio Deliverables &amp; Media Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ocean Freight Deals</strong></td>
+              <td>Container Volume Deals (FCL/LCL)</td>
+              <td>1x 40ft HQ Container (KRW 100M - 250M)</td>
+              <td>First 3 shipments: 50% deposit on order, 50% on Bill of Lading (B/L) release</td>
+              <td>Customized localized video packs, POS digital assets, and B2B wholesale portal access</td>
+            </tr>
+            <tr>
+              <td><strong>Zero-Inventory Commerce</strong></td>
+              <td>SISTAR SOD (SISTAR On Demand)</td>
+              <td>Zero Initial Inventory Sunk Capex</td>
+              <td>Automated 70/30 split settlement at payment gateway webhook execution</td>
+              <td>Daily shoppable video feeds with deep affiliate checkout links and zero warehousing risk</td>
+            </tr>
+            <tr>
+              <td><strong>Regional Distribution</strong></td>
+              <td>Offline Wholesalers &amp; Distributors</td>
+              <td>Regional exclusivity: KRW 50M initial stocking</td>
+              <td>Letter of Credit (L/C) at sight or K-SURE export credit guaranteed open account</td>
+              <td>Retail shelf video collateral, distributor training modules, and local ad creative bundles</td>
+            </tr>
+            <tr>
+              <td><strong>Creator Network</strong></td>
+              <td>Influencer Tracks I, II, and III</td>
+              <td>Tiered based on follower reach (10K to 1M+ followers)</td>
+              <td>Performance commissions (15-25% net) settled via automated bi-weekly escrow transfers</td>
+              <td>AI-personalized clip packages, sample product kits, and branded landing page generation</td>
+            </tr>
+            <tr>
+              <td><strong>Turnkey Franchising</strong></td>
+              <td>S1 through S6 Franchises</td>
+              <td>KRW 30M to 150M initial master licensing fee</td>
+              <td>30% down payment, 40% upon setup, 30% after 30-day operational handover</td>
+              <td>Complete digital signage loops, omnichannel marketing suite, and automated local news dispatch</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5: ZERO-CAC ORGANIC TRAFFIC FLYWHEEL & SVG 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 05</span>
+        <span class="sc-chapter-tag">Omnichannel Conversion Dynamics</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Organic Distribution Flywheel &amp; Algorithmic Synergies</h2>
+      <p class="sc-lead">By producing continuous micro-content optimized for search engine indexing and social discovery algorithms, SISTAR Studio builds an organic distribution flywheel that permanently depresses customer acquisition costs across the *SC ecosystem.</p>
+      <p class="sc-p">Each asset generated by the studio is tagged with machine-readable Schema.org metadata, Open Graph microformats, and localized search keywords. When syndicated across short-form video platforms, these assets capture ambient audience attention and direct consumers into shoppable checkout funnels. Concurrently, B2B wholesale buyers are funneled into automated offer sheet download portals, creating a dual-vector conversion mechanism.</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#090d16" />
+              <stop offset="100%" stop-color="#0f172a" />
+            </linearGradient>
+            <linearGradient id="flywheel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="50%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg2-bg)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#10b981" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">TRAFFIC MECHANICS // RECURSIVE FLYWHEEL</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Zero-CAC Algorithmic Organic Conversion Loop</text>
+
+          <!-- Flywheel Diagram -->
+          <!-- Center Hub -->
+          <circle cx="480" cy="190" r="54" fill="#064e3b" stroke="#34d399" stroke-width="2.5" />
+          <text x="480" y="185" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" text-anchor="middle">SISTAR</text>
+          <text x="480" y="202" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">STUDIO CORE</text>
+
+          <!-- Outer Ring Orbit -->
+          <circle cx="480" cy="190" r="115" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2" stroke-dasharray="6,6" />
+
+          <!-- Node 1: Top (10+ Daily Videos) -->
+          <g transform="translate(385, 95)">
+            <rect width="190" height="42" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="95" y="26" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">10+ Daily Micro-Videos</text>
+          </g>
+
+          <!-- Node 2: Right (Organic Impressions) -->
+          <g transform="translate(620, 169)">
+            <rect width="180" height="42" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="90" y="26" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Algorithmic Syndication</text>
+          </g>
+
+          <!-- Node 3: Bottom (E-Commerce Checkout) -->
+          <g transform="translate(385, 248)">
+            <rect width="190" height="42" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" />
+            <text x="95" y="26" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Direct Shoppable Inflow</text>
+          </g>
+
+          <!-- Node 4: Left (B2B Lead Flow) -->
+          <g transform="translate(160, 169)">
+            <rect width="180" height="42" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+            <text x="90" y="26" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Wholesale Lead Funnel</text>
+          </g>
+
+          <!-- Directional Arrows along Orbit -->
+          <path d="M 575 116 Q 640 135 650 165" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+          <path d="M 690 215 Q 670 250 580 269" fill="none" stroke="#10b981" stroke-width="2.5" />
+          <path d="M 380 269 Q 290 250 270 215" fill="none" stroke="#a855f7" stroke-width="2.5" />
+          <path d="M 270 165 Q 290 135 380 116" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+
+          <!-- Side Callout Legend -->
+          <g transform="translate(815, 120)">
+            <text x="0" y="0" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="600">LOOP DYNAMICS</text>
+            <text x="0" y="20" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• CAC: Nominal</text>
+            <text x="0" y="40" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• LTV: 17.5x Ratio</text>
+            <text x="0" y="60" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• Conversion: Instant</text>
+            <text x="0" y="80" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• Settlement: 70/30</text>
+          </g>
+          <g transform="translate(36, 120)">
+            <text x="0" y="0" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="600">INPUT CHANNELS</text>
+            <text x="0" y="20" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• YouTube Shorts</text>
+            <text x="0" y="40" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• TikTok Shop Feeds</text>
+            <text x="0" y="60" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• Instagram Reels</text>
+            <text x="0" y="80" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11">• Regional TV Portals</text>
+          </g>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 1.2: The Self-Sustaining Organic Traffic Flywheel — Continuous automated syndication yielding viral reach at near-zero CAC.</p>
+    </article>
+
+    <!-- CHAPTER 6: GLOBAL GOVERNANCE (IATA / IADA) & NETWORK TOPOLOGY -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 06</span>
+        <span class="sc-chapter-tag">Global Regulatory Framework</span>
+      </div>
+      <h2 class="sc-chapter-h2">IATA &amp; IADA Global Governance &amp; Multi-Hub Topology</h2>
+      <p class="sc-lead">SISTAR Studio operations are anchored by the strict standards of the International AI-Trade Association (IATA) and the International AI-Data Association (IADA). This regulatory foundation ensures that autonomous media creation complies fully with global intellectual property laws, regional advertising standards, and data sovereignty treaties.</p>
+      <p class="sc-p">Through our integrated 8-hub international architecture, media metadata is synchronized across Korea (SCK), Indonesia (SCI), Singapore (SCS), USA (SCU), Vietnam (SCV), India (SCIND), China (SCC), and Japan (SCJ). Each regional entity manages local broadcast licenses, ensures local consumer protection compliance, and monitors cultural resonance parameters while maintaining 100% interoperability with central governance ledgers.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">IATA Standard Compliance</div>
+          <h3 class="sc-sub-h3">Cross-Border Commercial AI Protocol</h3>
+          <p class="sc-p">Enforces standard commercial taxonomy across all 20 B2B offer tracks, ensuring that digital offer sheets, tariff classifications, and export documentation match bilateral trade treaties in real-time.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">IADA Data Sovereignty</div>
+          <h3 class="sc-sub-h3">Algorithmic Provenance &amp; Rights Ledger</h3>
+          <p class="sc-p">Every AI-generated creative asset carries a cryptographically verifiable provenance hash, ensuring protection against copyright infringement and validating compliance with local data localization mandates.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 7: RISK FIREWALL, 70/30 SETTLEMENT & SVG 3 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 07</span>
+        <span class="sc-chapter-tag">Settlement Security &amp; Asset Protection</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Track Legal Firewall &amp; Automated Webhook Settlement</h2>
+      <p class="sc-lead">To ensure complete institutional risk isolation, SISTAR Studio executes commercial clearing through *SC's Dual-Track Legal Firewall. This structure strictly separates core intellectual property assets from commercial fulfillment liabilities.</p>
+      <p class="sc-p">Under this architecture, <strong>SC Index</strong> holds all core neural algorithms, prompt weights, media trademarks, and proprietary data structures in a ring-fenced fiduciary vehicle. Commercial transactions, affiliate payouts, and physical inventory movements are managed exclusively through individual <strong>Biz Galaxy</strong> operational subsidiaries. Transactions utilize a <strong>3-Month Rolling Purchasing Forecast (RPF)</strong>, backing from the <strong>Korea Trade Insurance Corporation (K-SURE)</strong>, and automated <strong>70/30 payment gateway (PG) split webhooks</strong> that liquidate inventory costs instantly upon checkout while escrowing gross profit shares.</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg3-bg)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#f87171" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">FINANCIAL SECURITY // SETTLEMENT FIREWALL</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Dual-Track Legal Firewall &amp; 70/30 PG Settlement Webhooks</text>
+
+          <!-- Inflow Box -->
+          <g transform="translate(36, 110)">
+            <rect width="180" height="170" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="16" y="32" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">COMMERCE INFLOW</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Shoppable Orders</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Container B2B Wire</tspan>
+              <tspan x="16" dy="18">• Dropship Consumer PG</tspan>
+              <tspan x="16" dy="18">• Wholesale Advance L/C</tspan>
+              <tspan x="16" dy="18">• Affiliate Cart Checkout</tspan>
+            </text>
+          </g>
+
+          <!-- Arrow to Clearing Engine -->
+          <path d="M 220 195 L 260 195" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="262,195 255,190 255,200" fill="#38bdf8" />
+
+          <!-- PG Webhook Split Engine -->
+          <g transform="translate(265, 110)">
+            <rect width="210" height="170" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="16" y="32" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SETTLEMENT ENGINE</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Automated 70/30 Split</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Real-Time Webhook Trigger</tspan>
+              <tspan x="16" dy="18">• Instant Supplier Liquidation</tspan>
+              <tspan x="16" dy="18">• K-SURE Insured Escrow</tspan>
+              <tspan x="16" dy="18">• Zero Capital Lockup</tspan>
+            </text>
+          </g>
+
+          <!-- Forked Arrows -->
+          <!-- Upper Fork (30% to Holding IP) -->
+          <path d="M 480 160 L 530 140" stroke="#f59e0b" stroke-width="2.5" />
+          <polygon points="532,139 523,137 526,146" fill="#f59e0b" />
+
+          <!-- Lower Fork (70% to Operating Galaxy) -->
+          <path d="M 480 230 L 530 250" stroke="#10b981" stroke-width="2.5" />
+          <polygon points="532,251 526,244 523,253" fill="#10b981" />
+
+          <!-- Legal Firewall Partition (Dotted Red Line) -->
+          <line x1="515" y1="95" x2="515" y2="300" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" />
+          <text x="515" y="90" fill="#ef4444" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">DUAL-TRACK FIREWALL</text>
+
+          <!-- Upper Target: SC INDEX HOLDING -->
+          <g transform="translate(540, 105)">
+            <rect width="210" height="85" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+            <text x="14" y="24" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">SC INDEX (HOLDING IP)</text>
+            <text x="14" y="44" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">30% Net Margin &amp; Royalties</text>
+            <text x="14" y="66" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Protected IP, Algorithms &amp; Audited NAV</text>
+          </g>
+
+          <!-- Lower Target: BIZ GALAXY SUBSIDIARY -->
+          <g transform="translate(540, 205)">
+            <rect width="210" height="85" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="14" y="24" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">BIZ GALAXY (OPERATING ENTITY)</text>
+            <text x="14" y="44" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">70% COGS &amp; Logistics Clearing</text>
+            <text x="14" y="66" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Fulfillment, Port Fees &amp; Manufacturer Payout</text>
+          </g>
+
+          <!-- Final Audit Box -->
+          <g transform="translate(775, 135)">
+            <rect width="145" height="120" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5" />
+            <text x="12" y="26" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">NAV AUDIT ENGINE</text>
+            <text x="12" y="50" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Daily Ledger</text>
+            <text x="12" y="74" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="10">
+              <tspan x="12" dy="0">• Real-Time Balance</tspan>
+              <tspan x="12" dy="16">• Triple Control Towers</tspan>
+              <tspan x="12" dy="16">• Daily Audited NAV</tspan>
+            </text>
+          </g>
+          <path d="M 755 195 L 773 195" stroke="#34d399" stroke-width="2" />
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 1.3: Risk Firewall &amp; Settlement Security — Segregating core holding IP from operational fulfillment via automated 70/30 PG webhooks.</p>
+    </article>
+
+    <!-- CHAPTER 8: INSTITUTIONAL DOSSIER & STRATEGIC SYNERGY -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 08</span>
+        <span class="sc-chapter-tag">Institutional Dossier</span>
+      </div>
+      <h2 class="sc-chapter-h2">Corporate Governance Ledger &amp; Executive Summary</h2>
+      
+      <div class="sc-dossier-card">
+        <div class="sc-dossier-top">
+          <div>
+            <span class="sc-dossier-id">NODE ID: SC-MEDIA-STUDIO-01</span>
+            <span class="sc-dossier-domain" style="margin-left: 12px;">DOMAIN 12: MEDIA // COMMAND HUB</span>
+          </div>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; font-weight: 600; color: #64748b;">STATUS: OPERATIONAL &bull; VERIFIED</span>
+        </div>
+        <h3 class="sc-sub-h3" style="font-size: 1.35rem; margin-bottom: 12px;">SISTAR Studio Command Center Specifications</h3>
+        <p class="sc-p">SISTAR Studio establishes an institutional standard for modern generative commerce. By decoupling content production velocity from human resource constraints and backing every commercial campaign with standardized 20-track offer sheets, the platform delivers verifiable profitability, high-velocity cash conversion, and uncompromised risk protection for global enterprise partners.</p>
+        
+        <div class="sc-dossier-metrics">
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Infrastructure Readiness</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-top: 4px;">100% Cloud Native</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Reporting Transparency</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f5132; margin-top: 4px;">Daily NAV Audited</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Global Deployment</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #1d4ed8; margin-top: 4px;">8 Regional Bases</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC — SISTAR COMPANY | One Spark, Infinite Galaxifying</div>
+        <p class="sc-p" style="margin: 0; color: #1e293b;">Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation. All commercial inquiries and institutional investment memorandums are managed via the central corporate portal.<br/>Corporate Portal: <a href="https://sistarcompany.com" target="_blank" style="color: #0f5132; font-weight: 600;">https://sistarcompany.com</a> &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</p>
+      </div>
+    </article>
   </main>
 </body>
 </html>

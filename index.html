@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | Media - media</title>
-  <meta name="description" content="*SC (SISTAR Company) - Media : Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting." />
+  <title>*SC | Media — Master Portal &amp; Content Production Forge</title>
+  <meta name="description" content="*SC Media Master Domain Portal: Institutional monograph detailing the zero-sunk-capex media architecture, SISTAR Studio shoppable video forge, The SISTAR Post journalism wire, and 3-year scaled unit economics." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | Media",
-    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.",
+    "@type": "TechArticle",
+    "headline": "*SC Media — Master Portal & Content Production Forge",
+    "description": "Domain Root Gateway for Layer 6: 12. Media. Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets, and Autonomous Media Broadcasting.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC (SISTAR Company)",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,7 +24,21 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
@@ -33,193 +52,889 @@
     })();
   </script>
   <style>
-    .sc-auto-page {
+    /* === INSTITUTIONAL MONOGRAPH BASE STYLES === */
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+      background: transparent;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
       font-weight: 600;
-      color: #475569;
+      color: #334155;
+      margin: 0;
       letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+
+    /* === CHAPTER & EDITORIAL HEADINGS === */
+    .sc-chapter {
+      margin-bottom: 56px;
+      padding: 12px 0;
+      background: transparent;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #475569;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.24;
+      letter-spacing: -0.025em;
+      margin: 0 0 18px 0;
+    }
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.24rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.84;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.01rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.84;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+
+    /* === EXECUTIVE DARK HERO & METRICS === */
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #064e3b 80%, #1e1b4b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 4vw, 46px);
+      margin: 22px 0 36px 0;
+      border: 1px solid rgba(74, 222, 128, 0.35);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.03rem;
+      color: #e2e8f0;
+      line-height: 1.8;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .sc-kpi-strip { grid-template-columns: 1fr; }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.46rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.86rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* === EDITORIAL PANELS & GRIDS === */
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 26px 28px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
-    .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+
+    /* === MATHEMATICAL ARCHITECTURE BOXES === */
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 24px 0;
+      border-left: 4px solid #10b981;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
     }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+
+    /* === INSTITUTIONAL MATRICES & TABLES === */
+    .sc-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* === CALLOUTS & DOSSIER CARDS === */
+    .sc-callout {
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 8px;
+    }
+    .sc-dossier-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin: 28px 0;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-dossier-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+    .sc-dossier-id {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #0f172a;
+      color: #4ade80;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.06em;
+    }
+    .sc-dossier-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #0f5132;
+    }
+    .sc-dossier-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .sc-dossier-metrics { grid-template-columns: 1fr; }
+    }
+
+    /* === BESPOKE INLINE SVG FRAME === */
+    .sc-svg-frame {
+      width: 100%;
+      margin: 32px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 14px;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+
+    /* === PRINT ENGINE === */
     @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
-      #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .sc-monograph { max-width: 100% !important; padding: 0 !important; }
+      .sc-panel, .sc-dossier-card, .sc-table-wrap, .sc-svg-frame, .sc-exec-hero {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">media</p>
+  <main class="sc-monograph">
+    <!-- TOP BAR (BREADCRUMB ONLY - NO ACTION BUTTONS) -->
+    <header class="sc-top-bar">
+      <p class="sc-route">media</p>
+    </header>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">INSTITUTIONAL IR, PARTNERSHIP &amp; MEDIA GATEWAY</span></div>
-      <h1 class="sc-h1">*SC - Media</h1>
-      <p class="sc-sub">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.</p>
-      <p class="sc-lead"><strong>Media</strong> serves as the institutional interface connecting global investors, manufacturing partners, regional wholesalers, and media audiences with the <strong>*SC (SISTAR Company)</strong> universe - backed by 100% completed cloud/AI infrastructure and verifiable daily NAV auditing.</p>
-
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">3-Year Financial Trajectory &amp; Unit Economics</h2>
-          <p class="sc-p">Targets Year 1 Revenue of KRW 2.0B (20% OPM) &rarr; Year 2 KRW 7.0B (35% OPM) &rarr; Year 3 KRW 15.0B (35% OPM), supported by an LTV/CAC ratio of 17.5x, 2.8-month payback, and 60-75% blended gross margin.</p>
+    <!-- EXECUTIVE HERO -->
+    <section class="sc-exec-hero">
+      <div class="sc-chapter-num" style="color: #4ade80; margin-bottom: 8px;">*SC DOMAIN ROOT GATEWAY // LAYER 6 DIRECTORY &amp; MEDIA</div>
+      <h1 class="sc-doc-h1" style="color: #ffffff; margin-bottom: 12px;">*SC - Media Master Gateway</h1>
+      <p class="sc-sub-h3" style="color: #86efac; font-weight: 600; margin-bottom: 18px;">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Autonomous Media Broadcasting</p>
+      <p>The Media domain serves as the institutional gateway and traffic multiplier of the Signal Star Universe (*SC). Orchestrating the dual engines of SISTAR Studio (shoppable commercial video generation forge) and The SISTAR Post (global macroeconomic journalism and auditable NAV wire), the domain converts industrial supply chains into high-velocity, zero-CAC organic demand across eight international territory bases.</p>
+      <div class="sc-kpi-strip">
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">KRW 15.0B</div>
+          <div class="sc-kpi-desc">Year 3 Target Revenue (35% Operating Profit Margin)</div>
         </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">20-Track Standardized B2B Offer Sheets</h2>
-          <p class="sc-p">Ready-to-execute commercial packages covering Container Volume Deals (First 3 Shipments 50% Deposit), SISTAR SOD (Zero-Inventory Dropshipping), Offline Wholesalers, Influencers I-III, and S1-S6 Franchises.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">17.5x</div>
+          <div class="sc-kpi-desc">Consolidated LTV / CAC Ratio Across All Tracks</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">SISTAR Studio &amp; The SIGNAL STAR Post</h2>
-          <p class="sc-p">Unmanned media engine producing 10+ shoppable videos, automated newsletters, and global industry briefs daily via RSS/Make/Gemini pipelines - driving zero-CAC organic traffic across all portals.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">2.8 Mo</div>
+          <div class="sc-kpi-desc">Rapid Customer Acquisition Payback Velocity</div>
         </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">IATA &amp; IADA Global Governance</h2>
-          <p class="sc-p">Anchored by the International AI-Trade Association (IATA) and International AI-Data Association (IADA), establishing global standards for AI-driven cross-border trade and data sovereignty.</p>
+        <div class="sc-kpi-cell">
+          <div class="sc-kpi-val">100% Daily NAV</div>
+          <div class="sc-kpi-desc">Verifiable Ledger Auditing &amp; Legal Firewall Protection</div>
         </div>
       </div>
     </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+    <!-- CHAPTER 1: DOMAIN ARCHITECTURE & STRATEGIC MANDATE -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 01</span>
+        <span class="sc-chapter-tag">Domain Root Gateway Overview</span>
+      </div>
+      <h2 class="sc-chapter-h2">The Strategic Mandate: Layer 6 Content Production Forge</h2>
+      <p class="sc-lead">Within the 12-domain corporate architecture of *SC (SISTAR Company), Domain 12 (Media) fulfills the vital mission of autonomous attention generation, brand trust crystallization, and immediate e-commerce liquidity. Without high-velocity media, even superior products and AI software remain invisible to global markets.</p>
+      <p class="sc-p">Rather than constructing costly, depreciating physical broadcasting studios with massive headcount overhead, *SC architected a zero-sunk-capex digital forge. By uniting cognitive multi-modal synthesis (Gemini), dynamic rendering pipelines, automated RSS wire scraping, and deterministic settlement firewalls, the Media domain produces dozens of high-definition shoppable video assets and institutional macroeconomic wire dispatches every 24 hours. This continuous broadcast fuels organic traffic into every sister domain—from B2B trading (Qubit Biz) and consumer wellness to enterprise AI operating systems.</p>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Commercial Pillar</div>
+          <h3 class="sc-sub-h3">SISTAR Studio</h3>
+          <p class="sc-p">Automated generative production engine manufacturing 10+ vertical shoppable video assets daily, driving zero-CAC social shopping conversions across short-form platforms.</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Epistemic Pillar</div>
+          <h3 class="sc-sub-h3">The SISTAR Post</h3>
+          <p class="sc-p">Global institutional journalism wire publishing macroeconomic trade intelligence, bilateral regulatory telemetry, and daily audited NAV balance sheet certificates.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Corporate Anchor</div>
+          <h3 class="sc-sub-h3">IATA / IADA Governance</h3>
+          <p class="sc-p">Regulatory harmonization anchored by the International AI-Trade Association and International AI-Data Association, enforcing global compliance across 8 international bases.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- CHAPTER 2: DUAL-PILLAR SYMBIOSIS & SVG 1 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 02</span>
+        <span class="sc-chapter-tag">Master Dual-Pillar Symbiosis</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Engine Symbiosis: SISTAR Studio &amp; The SISTAR Post</h2>
+      <p class="sc-lead">The Media domain functions through the continuous mutual reinforcement of its two specialized sub-entities. SISTAR Studio drives commercial transaction velocity, while The SISTAR Post commands institutional authority and investor confidence.</p>
+      <p class="sc-p">When The SISTAR Post breaks an investigative report on bilateral trade tariff shifts or supply chain reorganizations, it establishes undeniable market credibility. Concurrently, SISTAR Studio immediately translates those trade insights into commercial opportunity—generating shoppable product showcases, B2B wholesale offer sheets, and dropshipping collateral tailored to the affected regional corridors. This synchronized feedback loop ensures that epistemic authority directly feeds monetization velocity.</p>
+
+      <!-- BESPOKE INLINE SVG 1 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg1-bg-master" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="50%" stop-color="#1e293b" />
+              <stop offset="100%" stop-color="#090d16" />
+            </linearGradient>
+            <linearGradient id="studio-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#34d399" />
+            </linearGradient>
+            <linearGradient id="post-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#818cf8" />
+            </linearGradient>
+            <filter id="master-shadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+            </filter>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg1-bg-master)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">DOMAIN 12 MASTER // DUAL-ENGINE ARCHITECTURE</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">SISTAR Studio &amp; The SISTAR Post Integrated Media Matrix</text>
+
+          <!-- Pillar 1: SISTAR Studio (Left) -->
+          <g transform="translate(36, 105)">
+            <rect width="265" height="180" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#master-shadow)" />
+            <rect x="16" y="16" width="110" height="20" rx="4" fill="#064e3b" />
+            <text x="24" y="30" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">COMMERCIAL FORGE</text>
+            <text x="16" y="66" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">SISTAR Studio</text>
+            <text x="16" y="92" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• 10+ Daily Shoppable Videos</tspan>
+              <tspan x="16" dy="18">• Zero-Inventory Dropshipping</tspan>
+              <tspan x="16" dy="18">• 20-Track B2B Commercial Sheets</tspan>
+              <tspan x="16" dy="18">• Automated Short-Form Syndication</tspan>
+            </text>
+            <text x="16" y="168" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SUB-NODE: 01_sistar-studio</text>
+          </g>
+
+          <!-- Central Coordination Core -->
+          <g transform="translate(345, 105)">
+            <rect width="270" height="180" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2" filter="url(#master-shadow)" />
+            <rect x="16" y="16" width="125" height="20" rx="4" fill="#78350f" />
+            <text x="24" y="30" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">MASTER GATEWAY HUB</text>
+            <text x="16" y="66" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">*SC Media Ecosystem</text>
+            <text x="16" y="92" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Zero Sunk-Capex Infrastructure</tspan>
+              <tspan x="16" dy="18">• IATA &amp; IADA Standards Protocol</tspan>
+              <tspan x="16" dy="18">• 8 Regional Bureau Sync (SCK..SCJ)</tspan>
+              <tspan x="16" dy="18">• 70/30 Settlement &amp; Legal Firewall</tspan>
+            </text>
+            <text x="16" y="168" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">DOMAIN ROOT: media</text>
+          </g>
+
+          <!-- Pillar 2: The SISTAR Post (Right) -->
+          <g transform="translate(660, 105)">
+            <rect width="265" height="180" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2" filter="url(#master-shadow)" />
+            <rect x="16" y="16" width="105" height="20" rx="4" fill="#0369a1" />
+            <text x="24" y="30" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">JOURNALISM WIRE</text>
+            <text x="16" y="66" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">The SISTAR Post</text>
+            <text x="16" y="92" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Macro Trade Intelligence Wire</tspan>
+              <tspan x="16" dy="18">• Verifiable Daily Audited NAV</tspan>
+              <tspan x="16" dy="18">• Sovereign Regulatory Telemetry</tspan>
+              <tspan x="16" dy="18">• SHA-256 Provenance Ledger</tspan>
+            </text>
+            <text x="16" y="168" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SUB-NODE: 02_the-sistar-post</text>
+          </g>
+
+          <!-- Connecting Arrows -->
+          <path d="M 303 160 L 343 160" stroke="#10b981" stroke-width="2.5" />
+          <path d="M 343 230 L 303 230" stroke="#fbbf24" stroke-width="2.5" />
+
+          <path d="M 617 160 L 657 160" stroke="#fbbf24" stroke-width="2.5" />
+          <path d="M 657 230 L 617 230" stroke="#38bdf8" stroke-width="2.5" />
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 3.1: The *SC Media Master Architecture — Autonomous Content Production Forge (SISTAR Studio) and Global Journalism Wire (The SISTAR Post) coordinated by the Master Gateway.</p>
+    </article>
+
+    <!-- CHAPTER 3: CONSOLIDATED 3-YEAR FINANCIAL MODEL & UNIT ECONOMICS -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 03</span>
+        <span class="sc-chapter-tag">Consolidated Financial Blueprint</span>
+      </div>
+      <h2 class="sc-chapter-h2">3-Year Financial Trajectory &amp; Consolidated Unit Economics</h2>
+      <p class="sc-lead">The consolidated financial blueprint of the Media domain delivers unprecedented operating leverage by replacing fixed studio and bureau depreciation with scalable, variable cloud cognitive compute.</p>
+      <p class="sc-p">In Year 1, the domain achieves <strong>KRW 2.0 Billion</strong> in recognized corporate revenue at a <strong>20.0% Operating Profit Margin (OPM)</strong>, driven by rapid adoption of container volume commercial packages and institutional research subscriptions. In Year 2, revenue scales to <strong>KRW 7.0 Billion</strong> with OPM expanding to <strong>35.0%</strong> as cross-border dropshipping (SISTAR SOD) and wire licensing mature. Year 3 targets <strong>KRW 15.0 Billion</strong> in revenue at <strong>35.0% OPM (KRW 5.25B net operating income)</strong>, supported by an ecosystem LTV/CAC ratio of <strong>17.5x</strong>, a rapid <strong>2.8-month payback velocity</strong>, and a blended gross margin of <strong>60-75%</strong> across all media-driven commerce.</p>
+
+      <!-- MATH BOX 1: CONSOLIDATED ECOSYSTEM MEDIA VELOCITY -->
+      <div class="sc-math-box">
+        <div class="sc-chapter-num" style="color: #4ade80; margin-bottom: 4px;">EQUATION G-301 // CONSOLIDATED MEDIA CAPITAL MULTIPLIER</div>
+        <div class="sc-math-code">\Pi_{domain} = \sum_{k \in \{Studio, Post\}} \left( Rev_k \times GM_k \right) - (Opex_{cloud} + Opex_{compliance}) \quad \text{where} \quad \frac{LTV}{CAC}_{consolidated} = 17.5x \quad (\text{Payback} \le 2.8 \text{ mo})</div>
+        <p style="margin: 8px 0 0 0; color: #cbd5e1; font-size: 0.95rem; line-height: 1.65;">
+          Where <strong>Rev_{Studio}</strong> represents shoppable e-commerce GMV commissions and B2B container packaging, <strong>Rev_{Post}</strong> reflects institutional terminal licenses and audited NAV wire subscriptions, and <strong>Opex_{cloud}</strong> accounts for GPU inference and CDN syndication across 8 global bases.
+        </p>
+      </div>
+
+      <!-- TABLE 1: CONSOLIDATED 3-YEAR PROJECTIONS -->
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Fiscal Horizon</th>
+              <th>Consolidated Revenue (KRW)</th>
+              <th>SISTAR Studio Share</th>
+              <th>The SISTAR Post Share</th>
+              <th>Operating Profit (OPM %)</th>
+              <th>Blended Gross Margin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Year 1 (Deployment &amp; Bootstrap)</strong></td>
+              <td>KRW 2.00 Billion</td>
+              <td>KRW 1.40 Billion (70%)</td>
+              <td>KRW 600 Million (30%)</td>
+              <td>KRW 400M (20.0%)</td>
+              <td>62.5%</td>
+            </tr>
+            <tr>
+              <td><strong>Year 2 (Regional Expansion)</strong></td>
+              <td>KRW 7.00 Billion</td>
+              <td>KRW 4.60 Billion (66%)</td>
+              <td>KRW 2.40 Billion (34%)</td>
+              <td>KRW 2.45 Billion (35.0%)</td>
+              <td>68.0%</td>
+            </tr>
+            <tr>
+              <td><strong>Year 3 (Global Scale Run-Rate)</strong></td>
+              <td>KRW 15.00 Billion</td>
+              <td>KRW 9.75 Billion (65%)</td>
+              <td>KRW 5.25 Billion (35%)</td>
+              <td>KRW 5.25 Billion (35.0%)</td>
+              <td>74.2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4: 20-TRACK MASTER B2B OFFER SHEETS PORTFOLIO & TABLE 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 04</span>
+        <span class="sc-chapter-tag">Consolidated Commercial Portfolio</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 20-Track Master B2B Commercial Offer Portfolio</h2>
+      <p class="sc-lead">To ensure predictable, contractual monetization across every tier of global partner engagement, the Media domain standardizes all commercial opportunities into 20 actionable B2B offer tracks.</p>
+      <p class="sc-p">These tracks completely eliminate discretionary discounting and negotiation ambiguity. Wholesalers, dropshippers, enterprise research clients, and master franchisees select from pre-approved operational tiers with predefined deposit requirements, K-SURE credit insurance integration, and automated 70/30 payment gateway split execution.</p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Track Category</th>
+              <th>Commercial Package Scope</th>
+              <th>Primary Target Counterparty</th>
+              <th>Financial Terms &amp; Escrow Structure</th>
+              <th>Core Media Deliverables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Track 01 - 04</strong></td>
+              <td>Container Volume Deals (FCL / LCL)</td>
+              <td>Tier-1 FMCG Importers &amp; Regional Wholesalers</td>
+              <td>First 3 shipments: 50% deposit, 50% on B/L release; subsequent on 60-day open account</td>
+              <td>Localized 4K video packs, point-of-sale display reels, and translated packaging CAD assets</td>
+            </tr>
+            <tr>
+              <td><strong>Track 05 - 08</strong></td>
+              <td>SISTAR SOD (Zero-Inventory Dropship)</td>
+              <td>E-commerce Power Sellers &amp; Digital Merchants</td>
+              <td>Zero initial inventory capital; automated 70/30 PG split webhook execution upon cart checkout</td>
+              <td>Daily shoppable video feeds, viral short-form assets, and instant affiliate checkout URLs</td>
+            </tr>
+            <tr>
+              <td><strong>Track 09 - 12</strong></td>
+              <td>Regional Wholesalers &amp; Offline Chains</td>
+              <td>National Supermarket &amp; Retail Chains</td>
+              <td>Confirmed Irrevocable Letter of Credit (L/C) or K-SURE backed corporate open account</td>
+              <td>In-store retail video displays, staff merchandising guides, and regional press releases</td>
+            </tr>
+            <tr>
+              <td><strong>Track 13 - 16</strong></td>
+              <td>Influencer Tracks (Tiers I, II, III)</td>
+              <td>Content Creators &amp; Brand Ambassadors</td>
+              <td>Tiered performance commission (15% to 25% net margin) via bi-weekly escrow clearing</td>
+              <td>AI-synthesized custom co-branded video clips, product sample allocation, and microsite generation</td>
+            </tr>
+            <tr>
+              <td><strong>Track 17 - 20</strong></td>
+              <td>S1 - S6 Franchise &amp; Wire Licensing</td>
+              <td>Institutional Master Franchisees &amp; Newsrooms</td>
+              <td>Master licensing fee (KRW 30M - 150M) with staged 30/40/30 operational deployment</td>
+              <td>Turnkey digital signage systems, automated local news dispatch, and terminal API feeds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5: 12-DOMAIN CROSS-POLLINATION ENGINE & SVG 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 05</span>
+        <span class="sc-chapter-tag">Omnichannel Cross-Pollination</span>
+      </div>
+      <h2 class="sc-chapter-h2">12-Domain Omnichannel Cross-Pollination Engine</h2>
+      <p class="sc-lead">The Media domain does not exist in isolation. It serves as the primary organic customer acquisition engine for all 12 operational domains comprising the Signal Star Universe.</p>
+      <p class="sc-p">Through algorithmic semantic tagging and distributed short-form syndication, ambient consumer and corporate attention is harvested at zero customer acquisition cost. Inflow is intelligently routed: retail consumers are directed into *SC consumer goods checkout funnels; institutional capital allocators are guided to verified NAV investor memorandums; and corporate manufacturers are channeled into Qubit Biz wholesale B2B offer sheets. This systemic cross-pollination ensures that zero ad spend is wasted on third-party digital ad duopolies.</p>
+
+      <!-- BESPOKE INLINE SVG 2 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg2-bg-master" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#090d16" />
+              <stop offset="100%" stop-color="#0f172a" />
+            </linearGradient>
+            <linearGradient id="radial-hub" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#38bdf8" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg2-bg-master)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">CROSS-POLLINATION // 12-DOMAIN TRAFFIC MATRIX</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Media Domain Zero-CAC Traffic Routing Across *SC Galaxy</text>
+
+          <!-- Central Media Engine -->
+          <circle cx="480" cy="190" r="56" fill="#064e3b" stroke="#34d399" stroke-width="2.5" />
+          <text x="480" y="184" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">DOMAIN 12</text>
+          <text x="480" y="200" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle">MEDIA FORGE</text>
+
+          <!-- Outer Ring of Connected Domains -->
+          <!-- Top Left: Domain 01 SC Index -->
+          <g transform="translate(140, 105)">
+            <rect width="180" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="14" y="24" fill="#7dd3fc" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">DOMAIN 01 // HOLDING</text>
+            <text x="14" y="40" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SC Index (Holding &amp; IP)</text>
+          </g>
+          <path d="M 320 135 L 430 170" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4" />
+
+          <!-- Bottom Left: Domain 03 B2B Biz Galaxy -->
+          <g transform="translate(140, 225)">
+            <rect width="180" height="50" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+            <text x="14" y="24" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">DOMAIN 03 // TRADE</text>
+            <text x="14" y="40" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Qubit Biz (Trade Engine)</text>
+          </g>
+          <path d="M 320 245 L 430 210" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" />
+
+          <!-- Top Right: Domain 08 AI Engine -->
+          <g transform="translate(640, 105)">
+            <rect width="180" height="50" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" />
+            <text x="14" y="24" fill="#d8b4fe" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">DOMAIN 08 // AI CORE</text>
+            <text x="14" y="40" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Scarlet AI &amp; Qubit Alg</text>
+          </g>
+          <path d="M 530 170 L 640 135" stroke="#a855f7" stroke-width="2" stroke-dasharray="4,4" />
+
+          <!-- Bottom Right: Domain 11 Global Hubs -->
+          <g transform="translate(640, 225)">
+            <rect width="180" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="14" y="24" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">DOMAIN 11 // NETWORK</text>
+            <text x="14" y="40" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">8 Global Hubs (SCK..SCJ)</text>
+          </g>
+          <path d="M 530 210 L 640 245" stroke="#10b981" stroke-width="2" stroke-dasharray="4,4" />
+
+          <!-- Side Telemetry Labels -->
+          <text x="36" y="300" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Syndication Velocity: 10+ Videos / Day &bull; Continuous RSS News Ingestion &bull; Zero Paid CAC</text>
+          <text x="924" y="300" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="end">12-DOMAIN MATRIX ACTIVATED</text>
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 3.2: 12-Domain Cross-Pollination Engine — How the Media domain harvests ambient digital attention to power zero-CAC customer acquisition across all *SC operating sectors.</p>
+    </article>
+
+    <!-- CHAPTER 6: GLOBAL OPERATIONAL TOPOLOGY & IATA/IADA GOVERNANCE -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 06</span>
+        <span class="sc-chapter-tag">International Governance &amp; Hub Topology</span>
+      </div>
+      <h2 class="sc-chapter-h2">Global Operational Topology: 8 International Bases &amp; IATA/IADA</h2>
+      <p class="sc-lead">To maintain authentic regional relevance and legal compliance across multiple continents, *SC Media operates through a coordinated network of eight international territorial bases.</p>
+      <p class="sc-p">The network encompasses Korea (SCK), Indonesia (SCI), Singapore (SCS), USA (SCU), Vietnam (SCV), India (SCIND), China (SCC), and Japan (SCJ). Each regional operational unit operates under the unified regulatory framework of the <strong>International AI-Trade Association (IATA)</strong> and the <strong>International AI-Data Association (IADA)</strong>. This dual-association architecture ensures that synthetic video creation, neural voice translation, and cross-border data analytics fully comply with international trade treaties, IP protection laws, and data localization protocols.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Unified Operating Ledger</div>
+          <h3 class="sc-sub-h3">Standardized Console &amp; Sales Dashboard</h3>
+          <p class="sc-p">Every regional media campaign, wholesale deal, and affiliate conversion is synchronized in real time into standardized Google Workspace Console ledgers, Monthly Sales sheets, and central operational dashboards.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Regulatory Harmonization</div>
+          <h3 class="sc-sub-h3">IATA &amp; IADA Standards Compliance</h3>
+          <p class="sc-p">Pioneers international best practices for AI-driven trade documentation, ensuring zero customs detention, full tariff compliance, and sovereign data residency across all trading corridors.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 7: RISK FIREWALL, K-SURE GUARANTEES & SETTLEMENT & SVG 3 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 07</span>
+        <span class="sc-chapter-tag">Enterprise Risk Firewall</span>
+      </div>
+      <h2 class="sc-chapter-h2">Dual-Track Legal Firewall, K-SURE Guarantees &amp; 70/30 Settlement</h2>
+      <p class="sc-lead">Institutional capital partners demand absolute fiduciary protection. The Media domain operates under *SC's Dual-Track Legal Firewall, ring-fencing core corporate assets and intellectual property away from day-to-day fulfillment and commercial trading risks.</p>
+      <p class="sc-p">All proprietary neural prompts, algorithms, and media trademarks are owned exclusively by <strong>SC Index</strong> (the holding entity). Commercial transactions, container shipments, and retail customer interactions occur through independent <strong>Biz Galaxy</strong> operational subsidiaries. Transactions are protected by <strong>3-Month Rolling Purchasing Forecasts (RPF)</strong> and export insurance backed by the <strong>Korea Trade Insurance Corporation (K-SURE)</strong>. Upon every digital sale, automated payment gateway webhooks trigger a <strong>70/30 split settlement</strong>—liquidating manufacturer goods costs instantly while safeguarding net margin in audited fiduciary escrow accounts.</p>
+
+      <!-- BESPOKE INLINE SVG 3 -->
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg3-bg-master" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+            <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f59e0b" />
+              <stop offset="100%" stop-color="#fbbf24" />
+            </linearGradient>
+          </defs>
+          <rect width="960" height="340" rx="12" fill="url(#svg3-bg-master)" />
+          <rect x="12" y="12" width="936" height="316" rx="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+          
+          <text x="36" y="44" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2">GOVERNANCE &amp; SETTLEMENT // RISK FIREWALL</text>
+          <text x="36" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Dual-Track Legal Ring-Fence, K-SURE Protection &amp; 70/30 Clearing</text>
+
+          <!-- Inflow & Buyer Commitments -->
+          <g transform="translate(36, 110)">
+            <rect width="180" height="170" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+            <text x="16" y="32" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">COMMERCE CAPITAL</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Buyer Inflow</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• 50% Advance Deposits</tspan>
+              <tspan x="16" dy="18">• Confirmed L/C at Sight</tspan>
+              <tspan x="16" dy="18">• Dropship Consumer PG</tspan>
+              <tspan x="16" dy="18">• Research Terminal Fees</tspan>
+            </text>
+          </g>
+
+          <!-- Arrow to Clearing Engine -->
+          <path d="M 220 195 L 260 195" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4,4" />
+          <polygon points="262,195 255,190 255,200" fill="#38bdf8" />
+
+          <!-- Webhook Clearing & K-SURE Engine -->
+          <g transform="translate(265, 110)">
+            <rect width="210" height="170" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="16" y="32" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CLEARING ENGINE</text>
+            <text x="16" y="58" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">70/30 Webhook Split</text>
+            <text x="16" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">
+              <tspan x="16" dy="0">• Automated Split Webhook</tspan>
+              <tspan x="16" dy="18">• K-SURE Export Insurance</tspan>
+              <tspan x="16" dy="18">• 3-Month Rolling Forecast</tspan>
+              <tspan x="16" dy="18">• Triple Control Towers</tspan>
+            </text>
+          </g>
+
+          <!-- Firewall Boundary Line -->
+          <line x1="515" y1="95" x2="515" y2="300" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" />
+          <text x="515" y="90" fill="#ef4444" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">LEGAL RISK FIREWALL</text>
+
+          <!-- Upper Track: Holding IP (SC Index) -->
+          <g transform="translate(540, 105)">
+            <rect width="210" height="85" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+            <text x="14" y="24" fill="#fbbf24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">SC INDEX (FIDUCIARY HOLDING)</text>
+            <text x="14" y="44" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">30% Net Profit Escrow</text>
+            <text x="14" y="66" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Protected Core IP, Trademarks &amp; AI Algorithms</text>
+          </g>
+          <path d="M 480 160 L 530 140" stroke="#f59e0b" stroke-width="2.5" />
+          <polygon points="532,139 523,137 526,146" fill="#f59e0b" />
+
+          <!-- Lower Track: Operating Subsidiary (Biz Galaxy) -->
+          <g transform="translate(540, 205)">
+            <rect width="210" height="85" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+            <text x="14" y="24" fill="#4ade80" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">BIZ GALAXY (COMMERCIAL OPCO)</text>
+            <text x="14" y="44" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">70% COGS &amp; Logistics Settlement</text>
+            <text x="14" y="66" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Manufacturer Payouts, Shipping &amp; Duties</text>
+          </g>
+          <path d="M 480 230 L 530 250" stroke="#10b981" stroke-width="2.5" />
+          <polygon points="532,251 526,244 523,253" fill="#10b981" />
+
+          <!-- Daily Audited NAV Summary -->
+          <g transform="translate(775, 135)">
+            <rect width="145" height="120" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5" />
+            <text x="12" y="26" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">NAV TRANSPARENCY</text>
+            <text x="12" y="50" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Daily Ledger</text>
+            <text x="12" y="74" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="10">
+              <tspan x="12" dy="0">• Triple Auditing Ring</tspan>
+              <tspan x="12" dy="16">• Real-Time Balance</tspan>
+              <tspan x="12" dy="16">• Daily Audited NAV</tspan>
+            </text>
+          </g>
+          <path d="M 755 195 L 773 195" stroke="#34d399" stroke-width="2" />
+        </svg>
+      </div>
+      <p class="sc-svg-caption">Figure 3.3: Enterprise Settlement Topology — Dual-track legal firewall separating holding IP from commercial liabilities, backed by K-SURE insurance and daily audited NAV ledgers.</p>
+    </article>
+
+    <!-- CHAPTER 8: INSTITUTIONAL DOMAIN DOSSIER & SUMMARY -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 08</span>
+        <span class="sc-chapter-tag">Institutional Dossier</span>
+      </div>
+      <h2 class="sc-chapter-h2">Corporate Governance Ledger &amp; Master Domain Summary</h2>
+      
+      <div class="sc-dossier-card">
+        <div class="sc-dossier-top">
+          <div>
+            <span class="sc-dossier-id">DOMAIN ID: SC-LAYER-06-MEDIA</span>
+            <span class="sc-dossier-domain" style="margin-left: 12px;">DOMAIN 12: MEDIA // MASTER PORTAL GATEWAY</span>
+          </div>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; font-weight: 600; color: #64748b;">STATUS: OPERATIONAL &bull; VERIFIED</span>
+        </div>
+        <h3 class="sc-sub-h3" style="font-size: 1.35rem; margin-bottom: 12px;">Master Media Domain Specifications &amp; Architectural Mandate</h3>
+        <p class="sc-p">The Media domain provides the ultimate commercial and epistemic foundation for the Signal Star Universe. By orchestrating SISTAR Studio's autonomous content forge with The SISTAR Post's global macroeconomic journalism wire, the domain delivers verifiable capital growth, zero-CAC organic distribution, and institutional-grade legal security across all international trade operations.</p>
+        
+        <div class="sc-dossier-metrics">
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Infrastructure Status</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-top: 4px;">100% Cloud Native</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Audit Frequency</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f5132; margin-top: 4px;">Daily NAV Audited</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase;">Global Deployment</div>
+            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #1d4ed8; margin-top: 4px;">8 Territorial Bases</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC — SISTAR COMPANY | One Spark, Infinite Galaxifying</div>
+        <p class="sc-p" style="margin: 0; color: #1e293b;">Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation. All commercial inquiries and institutional investment memorandums are managed via the central corporate portal.<br/>Corporate Portal: <a href="https://sistarcompany.com" target="_blank" style="color: #0f5132; font-weight: 600;">https://sistarcompany.com</a> &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</p>
+      </div>
+    </article>
   </main>
 </body>
 </html>
